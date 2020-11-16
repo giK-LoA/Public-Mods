@@ -1,0 +1,5 @@
+<configs>
+				
+<set xpath="vehicles/vehicle[@name='vehicleBicycle']/property[@name='cameraDistance' and  @value='3, 4.5']/@value">-0.2,-0.2</set>	
+
+</configs>

@@ -1,0 +1,37 @@
+<configs>	
+
+<remove xpath="/lootcontainers/lootgroup/item[contains(@name,'vehicle')]"/>
+<!--<remove xpath="/lootcontainers/lootgroup/item[@name='vehicleMinibikeChassis']"/>
+<remove xpath="/lootcontainers/lootgroup/item[@name='vehicleMinibikeHandlebars']"/>
+<remove xpath="/lootcontainers/lootgroup/item[@name='vehicleGyroCopterChassis']"/>
+<remove xpath="/lootcontainers/lootgroup/item[@name='vehicleGyroCopterAccessories']"/>
+<remove xpath="/lootcontainers/lootgroup/item[@name='vehicleWheels']"/>
+<remove xpath="/lootcontainers/lootcontainer/item[@name='vehicleBicycleChassis']"/>
+<remove xpath="/lootcontainers/lootcontainer/item[@name='vehicleMinibikeChassis']"/>
+<remove xpath="/lootcontainers/lootcontainer/item[@name='vehicleMinibikeHandlebars']"/>
+<remove xpath="/lootcontainers/lootcontainer/item[@name='vehicleGyroCopterChassis']"/>
+<remove xpath="/lootcontainers/lootcontainer/item[@name='vehicleGyroCopterAccessories']"/>
+<remove xpath="/lootcontainers/lootcontainer/item[@name='vehicleWheels']"/>
+
+<remove xpath="/lootcontainers/lootgroup/item[@name='vehicleBicycleChassisSchematic']"/>
+<remove xpath="/lootcontainers/lootgroup/item[@name='vehicleMinibikeChassisSchematic']"/>
+<remove xpath="/lootcontainers/lootgroup/item[@name='vehicleMinibikeHandlebarsSchematic']"/>
+<remove xpath="/lootcontainers/lootgroup/item[@name='vehicleMotorcycleChassisSchematic']"/>
+<remove xpath="/lootcontainers/lootgroup/item[@name='vehicleMotorcycleHandlebarsSchematic']"/>
+<remove xpath="/lootcontainers/lootgroup/item[@name='vehicle4x4TruckChassisSchematic']"/>
+<remove xpath="/lootcontainers/lootgroup/item[@name='vehicle4x4TruckAccessoriesSchematic']"/>
+<remove xpath="/lootcontainers/lootgroup/item[@name='vehicleGyroCopterChassisSchematic']"/>
+<remove xpath="/lootcontainers/lootgroup/item[@name='vehicleGyroCopterAccessoriesSchematic']"/>
+<remove xpath="/lootcontainers/lootcontainer/item[@name='vehicleBicycleChassisSchematic']"/>
+<remove xpath="/lootcontainers/lootcontainer/item[@name='vehicleMinibikeChassisSchematic']"/>
+<remove xpath="/lootcontainers/lootcontainer/item[@name='vehicleMinibikeHandlebarsSchematic']"/>
+<remove xpath="/lootcontainers/lootcontainer/item[@name='vehicleMotorcycleChassisSchematic']"/>
+<remove xpath="/lootcontainers/lootcontainer/item[@name='vehicleMotorcycleHandlebarsSchematic']"/>
+<remove xpath="/lootcontainers/lootcontainer/item[@name='vehicle4x4TruckChassisSchematic']"/>
+<remove xpath="/lootcontainers/lootcontainer/item[@name='vehicle4x4TruckAccessoriesSchematic']"/>
+<remove xpath="/lootcontainers/lootcontainer/item[@name='vehicleGyroCopterChassisSchematic']"/>
+<remove xpath="/lootcontainers/lootcontainer/item[@name='vehicleGyroCopterAccessoriesSchematic']"/>-->
+
+
+
+</configs>

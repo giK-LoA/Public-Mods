@@ -1,0 +1,28 @@
+<configs>
+
+<remove xpath="/recipes/recipe[contains(@name,'vehicle')]" />
+<remove xpath="/recipes/recipe[contains(@name,'carBattery')]" />
+ 
+<append xpath="/recipes">
+
+<recipe name="vehicleBicycleHandlebars" count="1" craft_time="30" craft_area="workbench" tags="perkGreaseMonkey,learnable,workbenchCrafting">
+	<ingredient name="resourceDuctTape" count="2"/>
+	<ingredient name="resourceLeather" count="2"/>
+	<ingredient name="resourceMechanicalParts" count="1"/>
+	<ingredient name="resourceMetalPipe" count="6"/>
+	<ingredient name="resourceSpring" count="2"/>
+	<effect_group>
+		<passive_effect name="CraftingIngredientCount" operation="perc_add" level="0" value=".5" tags="resourceDuctTape,resourceLeather,resourceSpring,resourceMetalPipe"/>
+	</effect_group>
+</recipe>
+
+
+<recipe name="carBattery" count="1" craft_area="chemistryStation" tags="learnable,perkAdvancedEngineering,chemStationCrafting">
+	<ingredient name="resourceScrapLead" count="180"/>
+	<ingredient name="resourceAcid" count="4"/>
+	<ingredient name="resourceScrapPolymers" count="6"/>
+</recipe>
+
+</append>
+
+</configs>

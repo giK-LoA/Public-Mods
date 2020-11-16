@@ -1,0 +1,17 @@
+<configs>
+
+<remove xpath="/progression/perks/perk[@name='perkGreaseMonkey']"/>	
+
+<append xpath="/progression/perks">
+	<perk name="perkGreaseMonkey" parent="skillIntellectCraftsmanship" name_key="Handlebars and Gas Cans" max_level="1" desc_key="perkGreaseMonkeyDesc" icon="ui_game_symbol_service">
+			<level_requirements level="1"><requirement name="ProgressionLevel" progression_name="attIntellect" operation="GTE" value="4" desc_key="reqIntellectLevel04"/></level_requirements>	
+			
+			<effect_group>
+					<passive_effect name="RecipeTagUnlocked" operation="base_set" value="1" level="1,1" tags="vehicleBicycleHandlebars,ammoGasCan,ammoGasCanBundle"/>
+				<effect_description level="1" desc_base="Unlocks crafting bicycle handlebars and gas cans."/>
+
+		</effect_group>
+	</perk>
+</append>
+		
+</configs>

@@ -1,0 +1,30 @@
+<configs>
+	
+<remove xpath="/traders/trader_item_groups/trader_item_group/item[@name='vehicleMinibikeChassis']"/>
+<remove xpath="/traders/trader_item_groups/trader_item_group/item[@name='vehicleMinibikeHandlebars']"/>
+<remove xpath="/traders/trader_item_groups/trader_item_group/item[@name='vehicleBicycleChassisSchematic']"/>
+<remove xpath="/traders/trader_item_groups/trader_item_group/item[@name='vehicleMinibikeChassisSchematic']"/>
+<remove xpath="/traders/trader_item_groups/trader_item_group/item[@name='vehicleMinibikeHandlebarsSchematic']"/>
+
+<remove xpath="/traders/trader_item_groups/trader_item_group/item[@name='vehicleMotorcycleChassisSchematic']"/>
+<remove xpath="/traders/trader_item_groups/trader_item_group/item[@name='vehicleMotorcycleHandlebarsSchematic']"/>
+<remove xpath="/traders/trader_item_groups/trader_item_group/item[@name='vehicle4x4TruckChassisSchematic']"/>
+<remove xpath="/traders/trader_item_groups/trader_item_group/item[@name='vehicle4x4TruckAccessoriesSchematic']"/>
+<remove xpath="/traders/trader_item_groups/trader_item_group/item[@name='vehicleGyroCopterAccessoriesSchematic']"/>
+<remove xpath="/traders/trader_item_groups/trader_item_group/item[@name='vehicleGyroCopterChassisSchematic']"/>
+			
+<remove xpath="/traders/trader_item_groups/trader_item_group/item[@name='vehicleWheels']"/>
+<remove xpath="/traders/trader_item_groups/trader_item_group/item[@name='vehicleMinibikePlaceable']"/>
+<remove xpath="/traders/trader_item_groups/trader_item_group/item[@name='vehicleBicycleChassis']"/>
+<remove xpath="/traders/trader_item_groups/trader_item_group/item[@name='vehicleBicyclePlaceable']"/>
+<remove xpath="/traders/trader_item_groups/trader_item_group/item[@name='vehicleMotorcycleChassis']"/>
+<remove xpath="/traders/trader_item_groups/trader_item_group/item[@name='vehicleMotorcyclePlaceable']"/>
+<remove xpath="/traders/trader_item_groups/trader_item_group/item[@name='vehicleMotorcycleHandlebars']"/>
+<remove xpath="/traders/trader_item_groups/trader_item_group/item[@name='vehicle4x4TruckChassis']"/>
+<remove xpath="/traders/trader_item_groups/trader_item_group/item[@name='vehicle4x4TruckAccessories']"/>
+<remove xpath="/traders/trader_item_groups/trader_item_group/item[@name='vehicle4x4TruckPlaceable']"/>
+<remove xpath="/traders/trader_item_groups/trader_item_group/item[@name='vehicleGyroCopterChassis']"/>
+<remove xpath="/traders/trader_item_groups/trader_item_group/item[@name='vehicleGyroCopterAccessories']"/>
+<remove xpath="/traders/trader_item_groups/trader_item_group/item[@name='vehicleGyrocopterPlaceable']"/>
+
+</configs>

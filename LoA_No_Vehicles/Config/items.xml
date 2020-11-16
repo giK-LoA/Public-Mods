@@ -1,0 +1,17 @@
+<configs>	
+
+<!-- Remove VehicleUnlock -->
+
+<set xpath="/items/item[@name='vehicleMinibikeChassis']/property[@name='UnlockedBy']/@value">vehicleSchematicAdmin</set>
+<set xpath="/items/item[@name='vehicleMinibikeHandlebars']/property[@name='UnlockedBy']/@value">vehicleSchematicAdmin</set>
+<set xpath="/items/item[@name='vehicleBicycleChassis']/property[@name='UnlockedBy']/@value">vehicleSchematicAdmin</set>
+<set xpath="/items/item[@name='vehicleMotorcycleChassis']/property[@name='UnlockedBy']/@value">vehicleSchematicAdmin</set>
+<set xpath="/items/item[@name='vehicleMotorcycleHandlebars']/property[@name='UnlockedBy']/@value">vehicleSchematicAdmin</set>
+<set xpath="/items/item[@name='vehicle4x4TruckChassis']/property[@name='UnlockedBy']/@value">vehicleSchematicAdmin</set>
+<set xpath="/items/item[@name='vehicle4x4TruckAccessories']/property[@name='UnlockedBy']/@value">vehicleSchematicAdmin</set>
+<set xpath="/items/item[@name='vehicleGyroCopterChassis']/property[@name='UnlockedBy']/@value">vehicleSchematicAdmin</set>
+<set xpath="/items/item[@name='vehicleGyroCopterAccessories']/property[@name='UnlockedBy']/@value">vehicleSchematicAdmin</set>
+
+
+
+</configs>	
