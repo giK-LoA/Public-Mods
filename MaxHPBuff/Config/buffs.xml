@@ -1,0 +1,19 @@
+<configs>	
+
+
+<append xpath="/buffs">	
+	
+	<buff name="buffHealed" name_key="Healed" description_key="You have healed yourself!" tooltip_key="You have healed yourself!" icon="ui_game_symbol_add" icon_color="222,77,16"> 
+	<stack_type value="ignore"/>
+	<duration value="1"/>
+		<effect_group>
+			<triggered_effect trigger="onSelfBuffStart" action="ModifyStats" stat="Health" operation="add" value="220"/>
+		</effect_group>
+	</buff>
+	
+	
+</append>		
+
+</configs>	
+
+
