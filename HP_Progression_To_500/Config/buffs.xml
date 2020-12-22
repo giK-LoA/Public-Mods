@@ -1,0 +1,18 @@
+<configs>	
+
+
+<insertAfter xpath="/buffs/buff[@name='buffStatusCheck01']/effect_group/triggered_effect[@trigger='onSelfBuffUpdate' and @cvar='$PlayerLevelBonus' and @operation='set' and @value='@$LastPlayerLevel']" >
+<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$PlayerLevelBonus" operation="multiply" value="0.2"/>
+
+</insertAfter>
+
+<set xpath="/buffs/buff[@name='buffStatusCheck01']/effect_group/triggered_effect[@trigger='onSelfBuffUpdate' and @cvar='$PlayerLevelBonus' and @operation='set' and @value='100']/requirement[@name='PlayerLevel' and @value='100']/@value">500</set>
+
+
+
+
+
+
+</configs>	
+
+

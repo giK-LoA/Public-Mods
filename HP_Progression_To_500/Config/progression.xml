@@ -1,0 +1,4 @@
+<configs>
+		<set xpath="/progression/level/@max_level">500</set>	<!-- Vanilla : 300 -->
+
+</configs>
