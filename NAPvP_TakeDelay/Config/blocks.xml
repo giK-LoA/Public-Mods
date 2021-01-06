@@ -1,0 +1,12 @@
+<configs>	
+
+<set xpath="/blocks/block[@name='forge']/property[@name='TakeDelay' and @value='15']/@value">240</set>	
+<set xpath="/blocks/block[@name='workbench']/property[@name='TakeDelay' and @value='15']/@value">240</set>
+<set xpath="/blocks/block[@name='cementMixer']/property[@name='TakeDelay' and @value='15']/@value">240</set>	
+<set xpath="/blocks/block[@name='chemistryStation']/property[@name='TakeDelay' and @value='15']/@value">240</set>
+
+<!-- Claim Doesnt work anyway but at some point it might:-->
+<set xpath="/blocks/block[@name='keystoneBlock']/property[@name='TakeDelay' and @value='30']/@value">240</set> 
+
+</configs>	
+

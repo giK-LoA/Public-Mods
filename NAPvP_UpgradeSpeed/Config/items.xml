@@ -1,0 +1,21 @@
+<configs>	
+
+
+<!-- Base building tools upgrade speed up -->
+	<set xpath="/items/item[@name='meleeToolRepairT3Nailgun']/property[@class='Action1']/property[@name='Delay' and @value='.73']/@value">0.3</set>
+	<set xpath="/items/item[@name='meleeToolRepairT0StoneAxe']/property[@class='Action1']/property[@name='Delay' and @value='.64']/@value">0.45</set>
+	<set xpath="/items/item[@name='meleeToolRepairT1ClawHammer']/property[@class='Action1']/property[@name='Delay' and @value='.64']/@value">0.40</set>
+
+
+<!-- Below lines are commented out for you but you may consider since: If two players use a slow upgrading tool (e.g. stoneaxe) to upgrade the same block to  concrete, theres a good chance that it skips upgrading to concrete and directly upgrades to steel even though there is no steel in the inventory of the players. The faster the tool the less likely it happens, but it may still happen.  -->
+
+<!-- Stoneaxe Steel and concrete mix removed since two player hitting same block may skip one upgrade -->
+<!--
+	<set xpath="/items/item[@name='meleeToolRepairT3Nailgun']/property[@class='Action1']/property[@name='Allowed_upgrade_items']/@value">resourceWood,resourceClayLump,resourceSnowBall,resourceScrapIron,resourceForgedIron,resourceForgedSteel,resourceConcreteMix,resourceCobblestones,ironDoor1_v1,vaultDoor01,scrapHatch_v1,vaultHatch_v1,resourceYuccaFibers,resourceCloth,resourceScrapPolymers,resourceNail</set>
+	<set xpath="/items/item[@name='meleeToolRepairT1ClawHammer']/property[@class='Action1']/property[@name='Allowed_upgrade_items']/@value">resourceWood,resourceClayLump,resourceSnowBall,resourceScrapIron,resourceForgedIron,resourceConcreteMix,resourceCobblestones,ironDoor1_v1,vaultDoor01,scrapHatch_v1,vaultHatch_v1,resourceYuccaFibers,resourceCloth,resourceScrapPolymers,resourceNail</set>
+	<set xpath="/items/item[@name='meleeToolRepairT0StoneAxe']/property[@class='Action1']/property[@name='Allowed_upgrade_items']/@value">resourceWood,resourceClayLump,resourceSnowBall,resourceScrapIron,resourceForgedIron,resourceCobblestones,ironDoor1_v1,vaultDoor01,scrapHatch_v1,resourceYuccaFibers,resourceCloth,resourceScrapPolymers</set>
+-->
+			
+</configs>	
+
+

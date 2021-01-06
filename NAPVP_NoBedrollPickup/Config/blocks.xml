@@ -1,0 +1,5 @@
+<configs>	
+
+	<set xpath="/blocks/block[@name='bedroll']/property[@name='CanPickup' and @value='true']/@value">false</set>
+	
+</configs>	

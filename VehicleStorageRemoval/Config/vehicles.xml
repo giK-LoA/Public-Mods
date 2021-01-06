@@ -1,0 +1,5 @@
+<configs>
+
+<remove xpath="/vehicles/vehicle/property[@class='storage']"/>
+
+</configs>

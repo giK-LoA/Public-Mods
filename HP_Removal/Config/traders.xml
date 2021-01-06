@@ -1,0 +1,9 @@
+<configs>
+	
+<remove xpath="/traders/trader_item_groups/trader_item_group/item[@name='ammo9mmBulletHP']"/>
+<remove xpath="/traders/trader_item_groups/trader_item_group/item[@name='ammo44MagnumBulletHP']"/>
+<remove xpath="/traders/trader_item_groups/trader_item_group/item[@name='ammo762mmBulletHP']"/>
+
+
+
+</configs>

@@ -1,0 +1,8 @@
+<configs>	
+
+<set xpath="/spawning/biome/spawn[contains(@entitygroup,'EnemyAnimals')]/@respawndelay">3</set>
+<set xpath="/spawning/biome/spawn[contains(@entitygroup,'FriendlyAnimals')]/@respawndelay">3</set>
+
+</configs>	
+
+

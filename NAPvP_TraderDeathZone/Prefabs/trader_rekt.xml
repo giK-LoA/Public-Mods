@@ -1,0 +1,5 @@
+﻿<prefab>
+
+<set xpath="/trader_rekt/property[@name='TraderAreaProtect' and @value='20,0,20']/@value">80,0,80</set>	
+
+</prefab>

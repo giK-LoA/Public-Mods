@@ -1,0 +1,12 @@
+<configs>
+
+
+<remove xpath="/recipes/recipe[@name='ammo9mmBulletHP']" />
+<remove xpath="/recipes/recipe[@name='ammoBundle9mmBulletHP']" />
+<remove xpath="/recipes/recipe[@name='ammo44MagnumBulletHP']" />
+<remove xpath="/recipes/recipe[@name='ammoBundle44MagnumBulletHP']" />
+<remove xpath="/recipes/recipe[@name='ammo762mmBulletHP']" />
+<remove xpath="/recipes/recipe[@name='ammoBundle762mmBulletHP']" />
+
+
+</configs>
