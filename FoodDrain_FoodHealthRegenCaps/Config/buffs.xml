@@ -1,0 +1,94 @@
+<configs>	
+
+<!-- Health Cap [CHANGE cvar="$healthCap" operation="set" value="200"/> 200 TO THE CAP YOU WANT! SECOND LINE BELOW HERE]-->
+<append xpath="/buffs/buff[@name='buffStatusCheck01']/effect_group">
+		<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$healthCap" operation="set" value="200"/>
+		<triggered_effect trigger="onSelfBuffUpdate" action="AddBuff" buff="buffHealthCap">
+			<requirement name="CVarCompare" cvar="medicalRegHealthAmount" operation="GTE" value="@$healthCap"/>
+		</triggered_effect>
+</append>
+
+<append xpath="/buffs">	
+	<buff name="buffHealthCap" name_key="Health Regen Cap Reached" description_key="Health Regen Cap Reached" icon="ui_game_symbol_add" icon_color="166,3,3" remove_on_death="true">
+	<stack_type value="ignore"/>
+	<update_rate value="1"/>
+
+		<effect_group>				
+			<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$healthBalancer" operation="set" value="@medicalRegHealthAmount"/>
+			<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$healthBalancer" operation="subtract" value="@$healthCap"/>
+			<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="medicalRegHealthAmount" operation="subtract" value="@$healthBalancer">		
+				<requirement name="CVarCompare" cvar="$healthBalancer" operation="GTE" value="1"/>
+			</triggered_effect>
+		</effect_group>		
+		<effect_group>			
+			<triggered_effect trigger="onSelfBuffUpdate" action="RemoveBuff" buff="buffHealthCap">
+				<requirement name="CVarCompare" cvar="medicalRegHealthAmount" operation="LTE" value="@$healthCap"/>	
+			</triggered_effect>
+		</effect_group>		
+	</buff>
+</append>
+
+<!-- Health from Food Cap [CHANGE cvar="$healthFCap" operation="set" value="200"/> 200 TO THE CAP YOU WANT! SECOND LINE BELOW HERE]-->
+<append xpath="/buffs/buff[@name='buffStatusCheck01']/effect_group">
+		<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$FhealthCap" operation="set" value="50"/>
+		<triggered_effect trigger="onSelfBuffUpdate" action="AddBuff" buff="buffFHealthCap">
+			<requirement name="CVarCompare" cvar="foodHealthAmount" operation="GTE" value="@$FhealthCap"/>
+		</triggered_effect>
+</append>
+
+<append xpath="/buffs">	
+	<buff name="buffFHealthCap" name_key="Food Health Regen Cap Reached" description_key="Food Health Regen Cap Reached" icon="ui_game_symbol_add" icon_color="166,3,3" remove_on_death="true">
+	<stack_type value="ignore"/>
+	<update_rate value="1"/>
+
+		<effect_group>				
+			<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$FhealthBalancer" operation="set" value="@foodHealthAmount"/>
+			<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$FhealthBalancer" operation="subtract" value="@$FhealthCap"/>
+			<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="foodHealthAmount" operation="subtract" value="@$FhealthBalancer">		
+				<requirement name="CVarCompare" cvar="$FhealthBalancer" operation="GTE" value="1"/>
+			</triggered_effect>
+		</effect_group>		
+		<effect_group>			
+			<triggered_effect trigger="onSelfBuffUpdate" action="RemoveBuff" buff="buffFHealthCap">
+				<requirement name="CVarCompare" cvar="foodHealthAmount" operation="LTE" value="@$FhealthCap"/>	
+			</triggered_effect>
+		</effect_group>		
+	</buff>
+</append>
+
+<!-- Food Cap [CHANGE cvar="$foodCap" operation="set" value="300"/> 300 TO THE CAP YOU WANT! SECOND LINE BELOW HERE]-->
+<append xpath="/buffs/buff[@name='buffStatusCheck01']/effect_group">
+		<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$foodCap" operation="set" value="300"/>
+		<triggered_effect trigger="onSelfBuffUpdate" action="AddBuff" buff="buffFoodCap">
+			<requirement name="CVarCompare" cvar="$foodAmountAdd" operation="GTE" value="@$foodCap"/>
+		</triggered_effect>
+</append>
+
+<append xpath="/buffs">	
+	<buff name="buffFoodCap" name_key="Food Cap Reached" description_key="Food Cap Reached" icon="ui_game_symbol_stomach" icon_color="166,3,3" remove_on_death="true">
+	<stack_type value="ignore"/>
+	<update_rate value="1"/>
+
+		<effect_group>				
+			<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$foodBalancer" operation="set" value="@$foodAmountAdd"/>
+			<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$foodBalancer" operation="subtract" value="@$foodCap"/>
+			<!-- BETWEEN THIS AND [THAT] MAKES A VOMIT SOUND IF PLAYER CROSSES THE CAP COMMENT THIS OUT IF YOU DONT WANT -->
+			<triggered_effect trigger="onSelfBuffStart" action="PlaySound" sound="player#vomit" play_in_head="true">
+				<requirement name="CVarCompare" cvar="$foodBalancer" operation="GTE" value="1"/>
+			</triggered_effect>
+			<!-- [THAT] -->
+			<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$foodAmountAdd" operation="subtract" value="@$foodBalancer">		
+				<requirement name="CVarCompare" cvar="$foodBalancer" operation="GTE" value="1"/>
+			</triggered_effect>
+		</effect_group>				
+		<effect_group>			
+			<triggered_effect trigger="onSelfBuffUpdate" action="RemoveBuff" buff="buffFoodCap">
+				<requirement name="CVarCompare" cvar="$foodAmountAdd" operation="LTE" value="@$foodCap"/>	
+			</triggered_effect>
+		</effect_group>		
+	</buff>
+</append>
+
+</configs>	
+
+
