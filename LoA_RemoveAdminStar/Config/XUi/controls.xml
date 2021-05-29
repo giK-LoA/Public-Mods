@@ -9,7 +9,11 @@
 			<sprite name="background" color="[darkGrey]" height="46" width="1290" pos="4,2" type="sliced" />
 			<rect depth="1" name="steamId" width="154" height="46" pos="6,-6">
 				<label depth="1" name="steamIdText" pos="4, -15" width="136" height="38" text="" font_size="26" pivot="left" />
-				<sprite name="admin" width="20" height="20" pos="150, -16" pivot="center" color="[selectedColor]" sprite="" tooltip_key="" />
+				<grid depth="0" pos="150, -8" cols="2" cell_width="20" cell_height="20" repeat_content="false" arrangement="horizontal">				
+					<sprite name="admin" width="20" height="20" color="[selectedColor]" sprite="" tooltip_key="" />
+					<sprite name="twitch" width="20" height="20" color="[selectedColor]" sprite="ui_game_symbol_twitch_actions" tooltip_key="xuiTwitchEnabled" />
+					<sprite name="twitchDisabled" width="20" height="20" color="[selectedColor]" sprite="ui_game_symbol_twitch_action_disabled" tooltip_key="xuiTwitchDisabled" />
+				</grid>
 			</rect>
 
 			<rect depth="1" name="level" width="70" height="46" pos="173,-6">
