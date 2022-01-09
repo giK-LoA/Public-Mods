@@ -1,0 +1,4 @@
+Key,File,Type,UsedInMainMenu,NoTranslate,english,Context / Alternate Text,german,latam,french,italian,japanese,koreana,polish,brazilian,russian,turkish,schinese,tchinese,spanish
+materialMAdminShapes,blocks,Block,,,Admin Block
+adminBlock:VariantHelper,blocks,Block,,,Admin Block Shapes
+adminBlockGroupDesc,blocks,Block,,,Admin Blocks have a lot of HP.

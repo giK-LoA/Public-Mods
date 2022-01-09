@@ -1,0 +1,20 @@
+<configs>	
+	<append xpath="/blocks">		
+			<block name="adminBlock" shapes="All">
+				<property name="CreativeMode" value="Dev"/>
+				<property name="Group" value="Building,advBuilding"/>
+				<property name="DescriptionKey" value="adminBlockGroupDesc"/>
+				<property name="CustomIconTint" value="FF0000"/>
+				<property name="Material" value="MAdminShapes"/>
+				<property name="DisplayType" value="blockHardened"/>
+				<property name="Texture" value="311"/>
+				<property name="UiBackgroundTexture" value="311"/>
+				<property class="RepairItems">
+					<property name="resourceForgedSteel" value="8"/>
+				</property>
+				<property name="EconomicValue" value="160"/>
+				<property name="FilterTags" value="MC_Shapes"/>
+				<property name="SortOrder1" value="0011"/>
+			</block>
+	</append>
+</configs>	

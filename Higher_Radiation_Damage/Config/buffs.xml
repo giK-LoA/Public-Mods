@@ -1,0 +1,10 @@
+<configs>	
+
+
+<set xpath="/buffs/buff[@name='buffRadiation03']/effect_group/passive_effect[@name='HealthChangeOT' and @duration='0,10' and @value='1,1']/@value">1,2</set>
+<set xpath="/buffs/buff[@name='buffRadiation03']/effect_group/passive_effect[@name='HealthChangeOT' and @duration='10,50' and @value='1,30']/@value">2,50</set>
+<set xpath="/buffs/buff[@name='buffRadiation03']/effect_group/passive_effect[@name='HealthChangeOT' and @duration='50,1000' and @value='40,1000']/@value">60,2000</set>
+
+</configs>	
+
+
